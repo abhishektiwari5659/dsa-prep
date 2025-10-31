@@ -44,11 +44,25 @@
 //  3 3 3      * * *
 //  4 4        * *
 //  5          * 
-n = 5
-for(let i = 1; i <= n; i++){
+
+
+// n = 5
+// for(let i = 1; i <= n; i++){
+//     let r = ' '
+//     for(let j = 0; j <= n - i ; j++){
+//         r = r + ("*" + " ")
+//     }
+//     console.log(r)
+// }
+
+let n = 5
+for(let i = 0; i < n; i++){
     let r = ' '
-    for(let j = 0; j <= n - i ; j++){
-        r = r + ("*" + " ")
+    for(let s = 0; s < n - (i + 1); s++){
+        r = r + " "
+    }
+    for(let j = 0; j < i + 1; j++){
+        r = r + "*"
     }
     console.log(r)
 }
