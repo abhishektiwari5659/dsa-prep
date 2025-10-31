@@ -55,14 +55,75 @@
 //     console.log(r)
 // }
 
+
+//5th 
+//      *
+//     **
+//    ***
+//   ****
+//  *****
+
+
+// let n = 5
+// for(let i = 0; i < n; i++){
+//     let r = ' '
+//     for(let s = 0; s < n - (i + 1); s++){
+//         r = r + " "
+//     }
+//     for(let j = 0; j < i + 1; j++){
+//         r = r + "*"
+//     }
+//     console.log(r)
+// }
+
+
+//6th 
+//  1
+//  10
+//  101
+//  1010
+//  10101
+
+
+// let n = 5
+// for(let i = 0; i < n; i++){
+//     let r = " "
+//     let s = 1
+//     for(let j =0; j <= i; j++){
+//         r = r + s
+//         if(s == 1){
+//             s = 0
+//         }
+//         else{
+//             s = 1
+//         }
+
+//     }
+//     console.log(r)
+// }
+
+
+//7th
+//  1
+//  01
+//  010
+//  1010
+//  10101
+
 let n = 5
+ let s = 1
 for(let i = 0; i < n; i++){
-    let r = ' '
-    for(let s = 0; s < n - (i + 1); s++){
-        r = r + " "
-    }
-    for(let j = 0; j < i + 1; j++){
-        r = r + "*"
+    let r = " "
+   
+    for(let j =0; j <= i; j++){
+        r = r + s
+        if(s == 1){
+            s = 0
+        }
+        else{
+            s = 1
+        }
+
     }
     console.log(r)
 }
